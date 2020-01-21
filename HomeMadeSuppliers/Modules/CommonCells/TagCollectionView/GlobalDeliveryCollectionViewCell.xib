@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GlobalDeliveryCollectionViewCell" id="gTV-IL-0wX" customClass="GlobalDeliveryCollectionViewCell" customModule="HomeMadeSuppliers" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="36"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="36"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4L0-Iq-nzm">
+                        <rect key="frame" x="0.0" y="0.0" width="346" height="36"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="A8M-Va-0I2">
+                                <rect key="frame" x="8" y="8" width="330" height="20"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.93725490199999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="A8M-Va-0I2" firstAttribute="leading" secondItem="4L0-Iq-nzm" secondAttribute="leading" constant="8" id="C8t-UW-kbL"/>
+                            <constraint firstAttribute="bottom" secondItem="A8M-Va-0I2" secondAttribute="bottom" constant="8" id="Ub7-os-15y"/>
+                            <constraint firstItem="A8M-Va-0I2" firstAttribute="top" secondItem="4L0-Iq-nzm" secondAttribute="top" constant="8" id="Z87-AL-8LW"/>
+                            <constraint firstAttribute="trailing" secondItem="A8M-Va-0I2" secondAttribute="trailing" constant="8" id="jwu-3C-qyb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.79607843137254897" green="0.80000000000000004" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="4L0-Iq-nzm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0gQ-Bl-K1n"/>
+                <constraint firstAttribute="bottom" secondItem="4L0-Iq-nzm" secondAttribute="bottom" id="CaX-nj-6ue"/>
+                <constraint firstAttribute="trailing" secondItem="4L0-Iq-nzm" secondAttribute="trailing" id="Hxb-0v-hIf"/>
+                <constraint firstItem="4L0-Iq-nzm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pFv-DL-MAu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="346" height="33"/>
+            <connections>
+                <outlet property="title" destination="A8M-Va-0I2" id="SXC-RB-nnz"/>
+            </connections>
+            <point key="canvasLocation" x="346.37681159420293" y="65.959821428571431"/>
+        </collectionViewCell>
+    </objects>
+</document>

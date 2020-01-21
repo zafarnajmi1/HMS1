@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="OrderStatusTableViewCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="StoreOrderStatusTableViewCell" rowHeight="77" id="KGk-i7-Jjw" customClass="StoreOrderStatusTableViewCell" customModule="HomeMadeSuppliers" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQI-Qh-Eqy" userLabel="myContentView">
+                        <rect key="frame" x="16" y="19" width="288" height="45"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WU-1N-xHT">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="45"/>
+                                <color key="backgroundColor" red="0.92406708000000004" green="0.1152566597" blue="0.14960616830000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="18"/>
+                                <state key="normal" title="Ship">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="ScV-FZ-FOD"/>
+                            <constraint firstAttribute="trailing" secondItem="1WU-1N-xHT" secondAttribute="trailing" id="Zpp-UT-BxV"/>
+                            <constraint firstItem="1WU-1N-xHT" firstAttribute="top" secondItem="bQI-Qh-Eqy" secondAttribute="top" id="Zrq-Tx-ece"/>
+                            <constraint firstAttribute="bottom" secondItem="1WU-1N-xHT" secondAttribute="bottom" id="qJT-Nj-MX4"/>
+                            <constraint firstItem="1WU-1N-xHT" firstAttribute="leading" secondItem="bQI-Qh-Eqy" secondAttribute="leading" id="tHr-qf-IwT"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.96808761359999995" green="0.98436444999999995" blue="0.98846048119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="bQI-Qh-Eqy" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Cdx-WO-oRB"/>
+                    <constraint firstItem="bQI-Qh-Eqy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="IxC-wG-VyG"/>
+                    <constraint firstItem="bQI-Qh-Eqy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="TaQ-nN-2eE"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="bQI-Qh-Eqy" secondAttribute="bottom" constant="8" id="ruj-Qi-Y4u"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="myContentView" destination="bQI-Qh-Eqy" id="1Ma-c0-abb"/>
+                <outlet property="shipBtn" destination="1WU-1N-xHT" id="tm2-H5-8j6"/>
+            </connections>
+            <point key="canvasLocation" x="132.80000000000001" y="168.6656671664168"/>
+        </tableViewCell>
+    </objects>
+</document>

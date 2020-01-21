@@ -1,0 +1,6 @@
+framework module Pods_HomeMadeSuppliers {
+  umbrella header "Pods-HomeMadeSuppliers-umbrella.h"
+
+  export *
+  module * { export * }
+}

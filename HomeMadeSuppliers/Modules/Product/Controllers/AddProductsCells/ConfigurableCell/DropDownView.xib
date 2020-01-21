@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="DropDownView" id="iN0-l3-epB" customClass="DropDownView" customModule="HomeMadeSuppliers" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="407" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feature Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwP-Qj-b2L">
+                    <rect key="frame" x="0.0" y="0.0" width="94.5" height="17.5"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gur-9f-z2x">
+                    <rect key="frame" x="98.5" y="-1.5" width="6" height="20.5"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
+                    <color key="textColor" red="0.93999463319999998" green="0.087154917420000005" blue="0.086417041720000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOB-xh-ehd" userLabel="DropDownVIew">
+                    <rect key="frame" x="0.0" y="23" width="407" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Category" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="kSe-Dv-73X">
+                            <rect key="frame" x="8" y="0.0" width="346" height="50"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DD3-hr-AEV">
+                            <rect key="frame" x="362" y="0.0" width="45" height="50"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DownArrowRed" translatesAutoresizingMaskIntoConstraints="NO" id="nOF-8r-8zJ">
+                                    <rect key="frame" x="16.5" y="19" width="12" height="12"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="12" id="TQg-5i-d1r"/>
+                                        <constraint firstAttribute="width" constant="12" id="qk9-aA-0H4"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="9fI-ji-vld"/>
+                                <constraint firstItem="nOF-8r-8zJ" firstAttribute="centerX" secondItem="DD3-hr-AEV" secondAttribute="centerX" id="p7x-LZ-g4X"/>
+                                <constraint firstItem="nOF-8r-8zJ" firstAttribute="centerY" secondItem="DD3-hr-AEV" secondAttribute="centerY" id="t8u-Of-Lwr"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1F-pc-ZfB">
+                            <rect key="frame" x="0.0" y="0.0" width="407" height="50"/>
+                            <connections>
+                                <action selector="DropdownAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="ydy-Nw-rCm"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="DD3-hr-AEV" secondAttribute="bottom" id="4ig-bn-l0h"/>
+                        <constraint firstItem="kSe-Dv-73X" firstAttribute="leading" secondItem="dOB-xh-ehd" secondAttribute="leading" constant="8" id="6kh-cC-Cv4"/>
+                        <constraint firstItem="DD3-hr-AEV" firstAttribute="leading" secondItem="kSe-Dv-73X" secondAttribute="trailing" constant="8" id="7Ry-Mo-PnN"/>
+                        <constraint firstAttribute="bottom" secondItem="L1F-pc-ZfB" secondAttribute="bottom" id="9Xs-Fi-Edg"/>
+                        <constraint firstAttribute="trailing" secondItem="L1F-pc-ZfB" secondAttribute="trailing" id="CZS-HF-Fk4"/>
+                        <constraint firstItem="DD3-hr-AEV" firstAttribute="top" secondItem="dOB-xh-ehd" secondAttribute="top" id="ISj-Uz-nJp"/>
+                        <constraint firstAttribute="height" constant="50" id="LeI-re-4sk"/>
+                        <constraint firstAttribute="bottom" secondItem="kSe-Dv-73X" secondAttribute="bottom" id="QoN-TK-CTG"/>
+                        <constraint firstAttribute="trailing" secondItem="DD3-hr-AEV" secondAttribute="trailing" id="iqM-Jh-YdZ"/>
+                        <constraint firstItem="L1F-pc-ZfB" firstAttribute="leading" secondItem="dOB-xh-ehd" secondAttribute="leading" id="oym-Mh-NkG"/>
+                        <constraint firstItem="kSe-Dv-73X" firstAttribute="top" secondItem="dOB-xh-ehd" secondAttribute="top" id="sDW-pv-TEs"/>
+                        <constraint firstItem="L1F-pc-ZfB" firstAttribute="top" secondItem="dOB-xh-ehd" secondAttribute="top" id="xwI-E3-scI"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.8980392157" green="0.90196078430000004" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gur-9f-z2x" firstAttribute="leading" secondItem="mwP-Qj-b2L" secondAttribute="trailing" constant="4" id="5j4-KC-ryh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dOB-xh-ehd" secondAttribute="trailing" id="Bk4-dr-bZr"/>
+                <constraint firstItem="gur-9f-z2x" firstAttribute="centerY" secondItem="mwP-Qj-b2L" secondAttribute="centerY" id="ISg-13-8El"/>
+                <constraint firstItem="dOB-xh-ehd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MiD-Bi-YZ8"/>
+                <constraint firstItem="mwP-Qj-b2L" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cqw-MK-yhx"/>
+                <constraint firstItem="dOB-xh-ehd" firstAttribute="top" secondItem="gur-9f-z2x" secondAttribute="bottom" constant="4" id="mZT-Sc-3hy"/>
+                <constraint firstItem="mwP-Qj-b2L" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sj2-dO-66N"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="Label" destination="mwP-Qj-b2L" id="Bst-cS-z45"/>
+                <outlet property="btn" destination="L1F-pc-ZfB" id="gXn-N9-Aii"/>
+                <outlet property="textField" destination="kSe-Dv-73X" id="P2X-2o-E2R"/>
+            </connections>
+            <point key="canvasLocation" x="148.55072463768118" y="-105.13392857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="DownArrowRed" width="100" height="100"/>
+    </resources>
+</document>

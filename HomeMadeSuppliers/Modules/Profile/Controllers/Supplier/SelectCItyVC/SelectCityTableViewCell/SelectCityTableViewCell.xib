@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SelectCityTableViewCell" rowHeight="77" id="KGk-i7-Jjw" customClass="SelectCityTableViewCell" customModule="HomeMadeSuppliers" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="446" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="446" height="76.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3k-LU-2St">
+                        <rect key="frame" x="16" y="12" width="414" height="45"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Cd-AD-ngy">
+                                <rect key="frame" x="4" y="5" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="3hr-iE-lmn"/>
+                                    <constraint firstAttribute="width" constant="35" id="ldn-SJ-saO"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Button" image="SquareWithBorder"/>
+                                <state key="selected" image="SquareTickRed"/>
+                                <connections>
+                                    <action selector="checkBtnTappedWithSender:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3kg-H4-hKP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="be0-4J-NvT">
+                                <rect key="frame" x="47" y="0.0" width="40.5" height="45"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1S-sp-bIG">
+                                <rect key="frame" x="293.5" y="0.5" width="120" height="44"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="AED0.0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xOz-Tg-zVR">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="44"/>
+                                        <color key="textColor" red="0.92406708000000004" green="0.1152566597" blue="0.14960616830000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                <integer key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="DTu-bi-SV1"/>
+                                    <constraint firstAttribute="bottom" secondItem="xOz-Tg-zVR" secondAttribute="bottom" id="W2A-dw-hsX"/>
+                                    <constraint firstAttribute="trailing" secondItem="xOz-Tg-zVR" secondAttribute="trailing" id="Yif-we-Ev0"/>
+                                    <constraint firstItem="xOz-Tg-zVR" firstAttribute="top" secondItem="c1S-sp-bIG" secondAttribute="top" id="wZn-TO-si3"/>
+                                    <constraint firstItem="xOz-Tg-zVR" firstAttribute="leading" secondItem="c1S-sp-bIG" secondAttribute="leading" id="zAM-Nc-CqA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92919379472732544" green="0.9333343505859375" blue="0.93734973669052124" alpha="0.60370291095890416" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c1S-sp-bIG" firstAttribute="top" secondItem="d3k-LU-2St" secondAttribute="top" constant="0.5" id="8K6-i0-MbL"/>
+                            <constraint firstAttribute="height" constant="45" id="MOi-jH-hiX"/>
+                            <constraint firstAttribute="bottom" secondItem="c1S-sp-bIG" secondAttribute="bottom" constant="0.5" id="Myx-gD-u1F"/>
+                            <constraint firstItem="be0-4J-NvT" firstAttribute="top" secondItem="d3k-LU-2St" secondAttribute="top" id="QrC-5A-C2a"/>
+                            <constraint firstAttribute="bottom" secondItem="be0-4J-NvT" secondAttribute="bottom" id="VZE-Fn-4zf"/>
+                            <constraint firstItem="5Cd-AD-ngy" firstAttribute="leading" secondItem="d3k-LU-2St" secondAttribute="leading" constant="4" id="lLu-On-dLA"/>
+                            <constraint firstAttribute="trailing" secondItem="c1S-sp-bIG" secondAttribute="trailing" constant="0.5" id="ofV-gg-5Nu"/>
+                            <constraint firstItem="be0-4J-NvT" firstAttribute="leading" secondItem="5Cd-AD-ngy" secondAttribute="trailing" constant="8" id="v62-uU-JVK"/>
+                            <constraint firstItem="5Cd-AD-ngy" firstAttribute="centerY" secondItem="d3k-LU-2St" secondAttribute="centerY" id="vPd-dD-oms"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="d3k-LU-2St" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="a6k-aM-K9B"/>
+                    <constraint firstAttribute="trailing" secondItem="d3k-LU-2St" secondAttribute="trailing" constant="16" id="nb3-0A-Hz5"/>
+                    <constraint firstItem="d3k-LU-2St" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="zhz-1e-qDt"/>
+                    <constraint firstAttribute="bottom" secondItem="d3k-LU-2St" secondAttribute="bottom" constant="12" id="zwM-qV-ZK2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkBtn" destination="5Cd-AD-ngy" id="4kX-XS-Ij7"/>
+                <outlet property="myTitle" destination="be0-4J-NvT" id="0hP-CF-uU3"/>
+                <outlet property="price" destination="xOz-Tg-zVR" id="wOt-hs-BEE"/>
+            </connections>
+            <point key="canvasLocation" x="223.18840579710147" y="124.88839285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="SquareTickRed" width="100" height="100"/>
+        <image name="SquareWithBorder" width="100" height="100"/>
+    </resources>
+</document>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RadioButton2TableViewCell" rowHeight="93" id="KGk-i7-Jjw" customClass="RadioButton2TableViewCell" customModule="HomeMadeSuppliers" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="93"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="340" height="92.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0Z-40-uTF" customClass="DLRadioButton">
+                        <rect key="frame" x="16" y="50.5" width="100" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="OgL-bf-UMA"/>
+                            <constraint firstAttribute="height" constant="40" id="aXP-md-FW2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                        <state key="normal" title="Domestic">
+                            <color key="titleColor" white="0.25" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                <real key="value" value="22"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                <color key="value" red="0.92406708000000004" green="0.1152566597" blue="0.14960616830000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                <color key="value" red="0.92406708000000004" green="0.1152566597" blue="0.14960616830000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="iconStrokeWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="domesticBtnTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="SUi-uY-IHe"/>
+                            <outletCollection property="otherButtons" destination="Q2C-rZ-606" id="bMx-h2-Mcc"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2C-rZ-606" customClass="DLRadioButton">
+                        <rect key="frame" x="138" y="50.5" width="140" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="140" id="cF3-iZ-MNK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
+                        <state key="normal" title="International">
+                            <color key="titleColor" white="0.25" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                <real key="value" value="22"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                <color key="value" red="0.92406708000000004" green="0.1152566597" blue="0.14960616830000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                <color key="value" red="0.92406708000000004" green="0.1152566597" blue="0.14960616830000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="iconStrokeWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="internationalBtnTapped:" destination="KGk-i7-Jjw" eventType="touchUpOutside" id="HFu-5J-LjJ"/>
+                            <outletCollection property="otherButtons" destination="D0Z-40-uTF" id="ggM-fc-X3b"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We Can Arrive In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kc0-oO-8Jl">
+                        <rect key="frame" x="16" y="8" width="133" height="38.5"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="D0Z-40-uTF" firstAttribute="top" secondItem="Kc0-oO-8Jl" secondAttribute="bottom" constant="4" id="GaV-Mu-rOb"/>
+                    <constraint firstItem="Kc0-oO-8Jl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Gyw-VX-Yf4"/>
+                    <constraint firstItem="Kc0-oO-8Jl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="TRk-Xg-erv"/>
+                    <constraint firstItem="Q2C-rZ-606" firstAttribute="height" secondItem="D0Z-40-uTF" secondAttribute="height" id="aTP-Oc-Xh6"/>
+                    <constraint firstItem="Q2C-rZ-606" firstAttribute="leading" secondItem="D0Z-40-uTF" secondAttribute="trailing" constant="22" id="bUG-6k-8M6"/>
+                    <constraint firstItem="D0Z-40-uTF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="gaR-0v-mL9"/>
+                    <constraint firstAttribute="bottom" secondItem="D0Z-40-uTF" secondAttribute="bottom" constant="2" id="j8F-tO-7bQ"/>
+                    <constraint firstItem="Q2C-rZ-606" firstAttribute="centerY" secondItem="D0Z-40-uTF" secondAttribute="centerY" id="o80-lR-Rme"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="domesticBtn" destination="D0Z-40-uTF" id="9XI-rr-t0D"/>
+                <outlet property="internationBtn" destination="Q2C-rZ-606" id="BLr-fv-HNY"/>
+            </connections>
+            <point key="canvasLocation" x="144.92753623188406" y="98.772321428571431"/>
+        </tableViewCell>
+    </objects>
+</document>

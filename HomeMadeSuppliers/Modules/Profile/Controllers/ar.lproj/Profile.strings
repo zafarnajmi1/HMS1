@@ -1,0 +1,114 @@
+
+/* Class = "UILabel"; text = "(112 Reviews)"; ObjectID = "084-hJ-CUA"; */
+"084-hJ-CUA.text" = "(112 Reviews)";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "0Ew-98-ffk"; */
+"0Ew-98-ffk.normalTitle" = "Save";
+
+/* Class = "UITextField"; placeholder = "e.g miketyson@gmail.com"; ObjectID = "1Dv-us-R6y"; */
+"1Dv-us-R6y.placeholder" = "e.g miketyson@gmail.com";
+
+/* Class = "UILabel"; text = "Store Reviews"; ObjectID = "2T7-sb-6ty"; */
+"2T7-sb-6ty.text" = "Store Reviews";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "82Z-6x-Q1B"; */
+"82Z-6x-Q1B.text" = "--";
+
+/* Class = "UILabel"; text = "First Name"; ObjectID = "984-EH-5MF"; */
+"984-EH-5MF.text" = "First Name";
+
+/* Class = "UITextField"; placeholder = "Enter Id"; ObjectID = "9iM-Jw-9Na"; */
+"9iM-Jw-9Na.placeholder" = "Enter Id";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "A6w-wn-U2b"; */
+"A6w-wn-U2b.normalTitle" = "Save";
+
+/* Class = "UILabel"; text = "Select Price"; ObjectID = "Ayu-b3-hv7"; */
+"Ayu-b3-hv7.text" = "Select Price";
+
+/* Class = "UILabel"; text = "City:"; ObjectID = "Dne-oL-uf8"; */
+"Dne-oL-uf8.text" = "City:";
+
+/* Class = "UIButton"; normalTitle = "Male"; ObjectID = "FPG-9r-Iup"; */
+"FPG-9r-Iup.normalTitle" = "Male";
+
+/* Class = "UIButton"; normalTitle = "Female"; ObjectID = "GGD-DJ-UPz"; */
+"GGD-DJ-UPz.normalTitle" = "Female";
+
+/* Class = "UILabel"; text = "Phone Number"; ObjectID = "Ic6-Vn-263"; */
+"Ic6-Vn-263.text" = "Phone Number";
+
+/* Class = "UILabel"; text = "Enter Id"; ObjectID = "J6h-3o-84a"; */
+"J6h-3o-84a.text" = "Enter Id";
+
+/* Class = "UILabel"; text = "+000 0000 0000"; ObjectID = "Jee-QR-41o"; */
+"Jee-QR-41o.text" = "+000 0000 0000";
+
+/* Class = "UITextField"; placeholder = "+00 000 000"; ObjectID = "JuI-DB-uCo"; */
+"JuI-DB-uCo.placeholder" = "+00 000 000";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "KAj-IH-Kr0"; */
+"KAj-IH-Kr0.text" = "Email";
+
+/* Class = "UITextField"; placeholder = "e.g 46 street, Al Ain. UAE"; ObjectID = "Kqa-lo-bSI"; */
+"Kqa-lo-bSI.placeholder" = "e.g 46 street, Al Ain. UAE";
+
+/* Class = "UILabel"; text = "Last Name"; ObjectID = "MVv-lG-rXb"; */
+"MVv-lG-rXb.text" = "Last Name";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "McA-gn-bdd"; */
+"McA-gn-bdd.text" = "--";
+
+/* Class = "UITextField"; placeholder = "Secret"; ObjectID = "MfG-Ff-VxV"; */
+"MfG-Ff-VxV.placeholder" = "Secret";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "PSj-EU-w7m"; */
+"PSj-EU-w7m.text" = "Address";
+
+/* Class = "UILabel"; text = "Secret"; ObjectID = "QPE-yC-vM0"; */
+"QPE-yC-vM0.text" = "Secret";
+
+/* Class = "UILabel"; text = "Phone no:"; ObjectID = "VVJ-VC-F1b"; */
+"VVJ-VC-F1b.text" = "Phone no:";
+
+/* Class = "UILabel"; text = "Address:"; ObjectID = "XoV-jG-jwT"; */
+"XoV-jG-jwT.text" = "Address:";
+
+/* Class = "UITextField"; placeholder = "e.g Mike"; ObjectID = "Zh1-3K-PcT"; */
+"Zh1-3K-PcT.placeholder" = "e.g Mike";
+
+/* Class = "UILabel"; text = "City:"; ObjectID = "Zjf-rf-TIB"; */
+"Zjf-rf-TIB.text" = "City:";
+
+/* Class = "UIButton"; normalTitle = "Edit Profile"; ObjectID = "aiJ-MB-5rZ"; */
+"aiJ-MB-5rZ.normalTitle" = "Edit Profile";
+
+/* Class = "UILabel"; text = "Gender:"; ObjectID = "bFN-XC-aEb"; */
+"bFN-XC-aEb.text" = "Gender:";
+
+/* Class = "UILabel"; text = "4.0"; ObjectID = "bpv-yH-Nnj"; */
+"bpv-yH-Nnj.text" = "4.0";
+
+/* Class = "UILabel"; text = "Save your payment profile"; ObjectID = "e64-FP-nky"; */
+"e64-FP-nky.text" = "Save your payment profile";
+
+/* Class = "UITextField"; placeholder = "e.g Tyson"; ObjectID = "f7F-yL-fcZ"; */
+"f7F-yL-fcZ.placeholder" = "e.g Tyson";
+
+/* Class = "UILabel"; text = "..."; ObjectID = "gBI-Fy-yCl"; */
+"gBI-Fy-yCl.text" = "...";
+
+/* Class = "UILabel"; text = "Email Address"; ObjectID = "iOO-jT-36R"; */
+"iOO-jT-36R.text" = "Email Address";
+
+/* Class = "UILabel"; text = "Select Gender"; ObjectID = "lS3-h1-YdD"; */
+"lS3-h1-YdD.text" = "Select Gender";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "maV-1D-RFd"; */
+"maV-1D-RFd.text" = "Name";
+
+/* Class = "UINavigationItem"; title = "Fixed Height CollectionView"; ObjectID = "naQ-SD-Fwh"; */
+"naQ-SD-Fwh.title" = "Fixed Height CollectionView";
+
+/* Class = "UILabel"; text = "Cities"; ObjectID = "vOS-fD-Tmo"; */
+"vOS-fD-Tmo.text" = "Cities";
